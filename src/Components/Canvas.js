@@ -1,11 +1,16 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
+const leftLimit = window.innerWidth - 202;
+const topLimit = window.innerHeight - 202;
+
 const screenSaverAnimation = keyframes`
  0% { border-radius: 50%; top: 0; left: 0 }
- 30% { border-radius: 20px; top: 450px; left: 400px }
- 60% { border-radius: 30px; top: 50px; left: 800px}
- 100% { border-radius: 50%; top: 490px; left: 1100px }
+ 30% { border-radius: 20px; top: ${topLimit}px; left: ${leftLimit / 3}px }
+ 60% { border-radius: 30px; top: ${topLimit / 5}px; left: ${
+  (leftLimit / 3) * 2
+}px}
+ 100% { border-radius: 50%; top: ${topLimit}px; left: ${leftLimit}px }
 `;
 
 const myAnimation = (props) =>
