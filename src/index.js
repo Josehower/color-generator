@@ -6,7 +6,7 @@ import randomColor from 'randomcolor';
 import { hue, lightness, sizeOptions } from './DropDownDataBase';
 import styled from 'styled-components';
 import './globalStyles.css';
-import coolbackground from '../src/coolbackground.png'; //is unused but necessary
+//import coolbackground from '../src/coolbackground.png'; //is unused but necessary
 
 const Tittle = styled.h1`
   margin-top: 20px;
